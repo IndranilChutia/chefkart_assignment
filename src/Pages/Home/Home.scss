@@ -1,0 +1,199 @@
+
+.main{
+    position: relative;
+    height: 100vh;
+    // width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // overflow: hidden;
+
+    // Upper Part
+    .topNavigation{
+        width: 100%;
+        padding: 15px 4vw;
+        display: flex;
+        background-color: white;
+
+        .nav-back-arr{
+            cursor: pointer;
+        }
+
+        .nav-text{
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0 20px;
+        }
+    }
+
+    .upperPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 3px solid #F2F2F2;
+        max-width: 900px;
+        width: 90%;
+    
+        .black-bg-dt{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 14%;
+
+            background-color: #1C1C1C;
+
+            z-index: -1;
+        }
+    
+        .hero{
+            max-width: 900px;
+            width: 100%;
+            position: relative;
+    
+    
+            .date-time-wrapper{
+                position: relative;
+                width: 100%;
+    
+                .date-time-container{
+                    // position: relative;
+                    margin: 2.5vh 0;
+                    width: 100%;
+                    justify-content: space-between;
+                    box-shadow: 0px 1px 4px #D6D6D69E;
+                    padding: 3vh 5vw;
+                    border-radius: 10px;
+                    background-color: white;
+    
+                    .date-picker{
+                        p{
+                            font-size: 0.75rem;
+                            font-weight: 700;
+                            margin-left: 10px;
+                        }
+                    }
+                   
+                    .date-time-divider{
+                        border: none;
+                        border-left: 1px solid #D6D6D6CE;
+                        height: 25px;
+                    }
+    
+                    .time-picker{
+                        p{
+                            font-size: 0.75rem;
+                            font-weight: 700;
+                            margin-left: 10px;
+                        }
+                    }
+                   
+                }
+            }
+    
+    
+            // Tags
+            .tags-container{
+                padding: 2px 0;
+                display: flex;
+                gap: 10px;
+                overflow-x: scroll;
+                .unselectedTag{
+                    background-color: transparent;
+                    padding: 4px 20px;
+                    border: 0.5px solid #BDBDBD;
+                    border-radius: 18px;
+                    color: #8A8A8A;
+                    font-size: 0.75rem;
+                    cursor: pointer;
+                }
+    
+                .selectedTag{
+                    background-color: #FFF9F2;
+                    padding: 4px 20px;
+                    border: 0.5px solid #FF941A;
+                    border-radius: 18px;
+                    color: #FF941A;
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+    
+            .tags-container::-webkit-scrollbar{
+                display: none;
+            }
+    
+    
+        }
+    
+
+    }
+
+
+    // Lower Part
+
+    .lowerPart{
+        // height: 100vh;
+        max-width: 900px;
+        width: 90%;
+        .recommended-container{
+            margin: 1rem 0;
+            width: 100%;
+            justify-content: space-between;
+            max-width: 900px;
+
+            h1{
+                gap: 5px;
+                font-size: 1rem;
+                letter-spacing: 0.16px;
+                font-weight: 700;
+            }
+
+            button{
+                font-size: 0.55rem;
+                font-weight: 700;
+                height: 100%;
+                padding: 0 15px;
+                border: none;
+                color: white;
+                background-color: #1C1C1C;
+                box-shadow: 0px 3px 4px #00000029;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        }
+
+        .dish-cards-wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+    
+    // Items Added Popup
+    .added-item-popup{
+        z-index: 2;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #1C1C1C;
+        bottom: 20px;
+        border-radius: 10px;
+        gap: 40px;
+        cursor: pointer;
+        .popup-text-container{
+            display: flex;
+            gap: 10px;
+            h3{
+                color: white;
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+        }
+
+    }
+}

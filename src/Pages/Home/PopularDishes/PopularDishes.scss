@@ -1,0 +1,38 @@
+.popular-dish-wrapper {
+    padding: 20px 0;
+
+    .popular-dish-heading{
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .popular-dishes-container {
+        display: flex;
+        gap: 10px;
+
+        .popularDish {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            
+
+            .popular-dish-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(0.55);
+            }
+
+            .popular-dish-name{
+                text-align: center;
+                position: absolute;
+                font-size: 0.6rem;
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+}
