@@ -26,6 +26,7 @@ const DishCard = () => {
                     <>
                     <div className='dishCard'>
                         <div className="dc-leftPart">
+                            
                             {/* Name & Rating */}
                             <div className="dc-name-container">
                                 <h2>{item.name}</h2>

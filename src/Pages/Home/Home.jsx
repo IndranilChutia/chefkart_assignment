@@ -44,7 +44,7 @@ const Home = () => {
                 <img src={backArrow} alt="backArr" className='nav-back-arr' />
                 <h2 className='nav-text'>Select Dishes</h2>
             </div>
-            {/* Upper Part Fixed*/}
+            {/* Upper Part*/}
             <div className="upperPart">
 
 

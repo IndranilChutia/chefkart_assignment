@@ -1,0 +1,27 @@
+.item-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem 0;
+
+    .item-list-heading{
+        display: flex;
+        gap: 10px;
+        margin: 2px 0;
+        .list-heading{
+            font-size: 0.75rem;
+        }
+    }
+
+    .item-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+            p{
+            font-size: 0.65rem;
+            font-weight: 500;
+        }
+    }
+   
+}
